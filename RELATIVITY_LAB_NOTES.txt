@@ -1,0 +1,10 @@
+RELATIVITY LAB
+
+The dashboard includes an illustrative calculator for the theoretical rate of an idealized clock at a star's surface compared with a clock at Earth's surface. It uses a Schwarzschild gravitational factor sqrt(1 - 2GM/(Rc^2)) and a special-relativistic motion factor sqrt(1 - v^2/c^2).
+
+Important limitations:
+- Gaia distance does not determine stellar mass or radius. The calculator uses explicit user inputs.
+- Gaia radial velocity alone is not a full 3D relative speed.
+- This is a simplified model, not a measurement of time dilation and not a complete relativistic model for two clocks in different astrophysical environments.
+- It omits rotation, oblateness, companions, galactic potential, Earth rotation, and clock-transport details.
+- Do not interpret the output as an observed property of the selected Gaia source.

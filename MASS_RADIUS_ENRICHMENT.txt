@@ -1,0 +1,13 @@
+STELLAR MASS/RADIUS ENRICHMENT
+
+AstroAgent now performs a bounded cross-match for returned Gaia DR3 source IDs against gaiadr3.astrophysical_parameters and reads mass_flame and radius_flame where available.
+
+Important scientific limitations:
+- FLAME values are catalogue/model-derived estimates, not direct measurements for every star.
+- Coverage is incomplete. Missing values remain blank and the dashboard shows the clock comparison as unavailable.
+- The enrichment is capped at 200 candidate sources and queries in batches of 40 to limit server load/timeouts.
+- The one-hour comparison is a simplified static gravitational clock-rate comparison between a hypothetical clock at the stellar surface and one at Earth's surface. It does not include full stellar structure, rotation, orbital motion, or all gravitational potentials.
+- A distance from Earth does not by itself cause gravitational time dilation.
+- Results are theoretical model estimates, not observed time dilation.
+
+Data documentation: https://gea.esac.esa.int/archive/documentation/GDR3/

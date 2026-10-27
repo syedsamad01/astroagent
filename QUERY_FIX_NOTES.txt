@@ -1,0 +1,7 @@
+AstroAgent query reliability fix
+
+This package uses conservative Gaia ADQL with plain column identifiers and a minimal fallback query if every targeted research query fails. Query failures are logged as failed rather than reported as successful. The fallback is attempted only when no targeted query returns usable rows.
+
+To run: double-click run_astroagent.bat. Keep the terminal open while the dashboard runs.
+
+Note: the automated tests validate local query construction and data processing. They do not guarantee that the public Gaia archive is reachable at any particular moment.

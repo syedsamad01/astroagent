@@ -1,0 +1,7 @@
+STAR CLOCK COMPARISON
+
+The candidate table now includes a per-star one-hour clock comparison. It calculates only when stellar mass and radius are present in the candidate row (recognized columns: mass_solar / stellar_mass_solar / mass_msun and radius_solar / stellar_radius_solar / radius_rsun).
+
+The basic Gaia DR3 query does not provide reliable mass and radius for every star. In those cases the dashboard explicitly displays that the estimate is unavailable rather than inventing a value. The simplified calculation compares Schwarzschild gravitational clock-rate factors at the stellar surface and Earth's surface. It does not include relative motion, galactic potential, stellar rotation, or other effects.
+
+For real per-star estimates, the next step is to cross-match candidates with a trustworthy catalog containing stellar mass and radius and preserve provenance/uncertainties.

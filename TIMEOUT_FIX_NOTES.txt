@@ -1,0 +1,5 @@
+AstroAgent timeout fix
+
+This build removes server-side ORDER BY from candidate queries. Gaia can stop expensive ordered scans at its 60-second execution limit; AstroAgent now retrieves a smaller sample and performs ranking locally after retrieval. The launcher uses 50 rows per query.
+
+Important scientific limitation: this improves query cost but a limited unordered sample cannot guarantee that it contains the farthest sources in Gaia DR3. Rankings apply only to the retrieved sample. If Gaia remains busy or times out, rerun later or lower --limit (for example: py astro_agent.py --limit 20 --snr 5 --max-wait 120).
